@@ -14,8 +14,6 @@ def max_steal(val):
         dp[i] = max(val[i] + dp[i-2], dp[i-1])
     
     return dp[-1]
-
-# Sample Input
 val = [6, 7, 1, 3, 8, 2, 5]
 print("Maximum stolen value:", max_steal(val))
 
